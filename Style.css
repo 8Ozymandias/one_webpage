@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 html,body{
-    background: url('img/wooden.jpeg') no-repeat center center fixed;
+    background: url('img/') no-repeat center center fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -13,6 +13,50 @@ html,body{
     
 
 }
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: black;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: lightcoral;
+}
+
+p.lead {
+    color:black;
+} 
+
+p.lead2 {
+    color:black;
+} 
+
+p.lead3 {
+    color:black;
+} 
+
+p.lead4 {
+    color:black;
+} 
+
+
+h4.card-title {
+    color:black;
+}
+
+p.card-text{
+    color:black;
+}
+
+h5.lead2{
+    color:black;
+}
+
 
 .navbar {
     padding: .8rem;
@@ -34,12 +78,12 @@ html,body{
        
                     }
 
-.carousel-caption {
+/* .carousel-caption {
     position: absolute;
     top:50%;
     transform: translateY(-50%);
 
-}
+} */
 
 .carousel-caption h6{
     font-size: 600%;
@@ -163,7 +207,7 @@ hr.light-100{
 
 /*--- Media Queries ---*/
 
-@media (max-width: 2000px) {
+/* @media (max-width: 2000px) {
 
    
 
@@ -249,10 +293,10 @@ hr.light-100{
 
 
 
-}
+} */
 
 
-
+/* 
 
 @media(max-width:600px){
 
@@ -376,7 +420,7 @@ hr.light-100{
 
     
 
-}
+} */
 
 
 /*--- Navbar - Fixed at top and remains white at the very top and as you scroll ---*/
@@ -421,6 +465,21 @@ hr.light-100{
     
 
 } */
+ 
+/*
+Forces carousel image to be 100% width and not max width of 100%
+*/
+.carousel-item .img-fluid {
+  width:100%;
+}
+
+.carousel-item a {
+    display: block;
+    width:100%;
+  }
+  
+  
+
 
 /*--- Fixed Background Image ---*/
 figure {
@@ -484,10 +543,133 @@ Extra (xl) large devices (large desktops, 1200px and up)
 */
 
 
+  
 
 
+  .container-with-centered-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  
+  #top{
 
+    font-size: 50px;
+    opacity: 0.8;
+  }
 
+  #welcome{
+
+    font-size: 15px;
     
+  }
+ 
+  
+  #loc{
 
+    font-size: 10px;
+    padding-top:5%;
+  }
+
+ #middling {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper{
+  max-width: 350px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 10px;
+  outline: solid;
+  box-shadow: 4px 4px 2px rgb(88, 191, 255); 
+}
+
+.wrapper h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.wrapper .input_field{
+  margin-bottom: 10px;
+}
+
+.wrapper .input_field input[type="text"],
+.wrapper textarea{
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  padding: 10px;
+}
+
+.wrapper textarea{
+  resize: none;
+  height: 80px;
+}
+
+.wrapper .newbtn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: lightskyblue;
+  color: #332902;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  cursor: pointer;
+}
+
+.wrapper .newbtn input[type="submit"]{
+    border: 0px;
+    margin-top: 15px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: lightskyblue;
+    color: #332902;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    border-radius: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    cursor: pointer;
+  }
+
+#error_message{
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    background-color: lightskyblue;
+}
+
+  

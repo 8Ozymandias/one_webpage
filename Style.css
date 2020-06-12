@@ -57,6 +57,11 @@ h5.lead2{
     color:black;
 }
 
+h2.topSection {
+    color:white;
+};
+
+
 
 .navbar {
     padding: .8rem;
@@ -102,6 +107,31 @@ h5.lead2{
     background-color: #6ef8ff;
     border: 1px solid  #6ef8ff;
 }
+
+
+/* Blue */
+.btnlearnmore {
+    border-color: white;
+    color: dodgerblue;
+  }
+  
+  .btnlearnmore:hover {
+    background: #2196F3;
+    color: white;
+  }
+
+  .clientele {
+    border-color: black;
+    color: black;
+  }
+  
+  .clientele:hover {
+    background: #2196F3;
+    color: black;
+  }  
+  
+
+
 
 .jumbotron {
     padding: 1rem;

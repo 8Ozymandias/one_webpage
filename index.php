@@ -16,9 +16,17 @@
     <!-- https://www.appcues.com/blog/67-open-source-modal-window-plugins-made-with-jquery-javascript-css-and-more -->
     <!-- https://www.youtube.com/watch?v=gLWIYk0Sd38 -->
     <script>
+
         $(document).ready(function(){
             $("#myModal").modal('show');
         });
+
+        $(function() {
+        $('#myModal').click(function() {
+         $('#myModal').modal('hide');
+        });
+        })
+
     </script>
 </head>
 <body>
@@ -93,22 +101,22 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
 
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#services">Services</a>
 
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
+                <a class="nav-link" href="#team">Team</a>
 
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">Connect</a>
+                <a class="nav-link" href="#connect">Connect</a>
 
             </li>
 
@@ -140,15 +148,16 @@
         <div class="carousel-inner" role="listbox">
           
             <div class="carousel-item active">
-                <a href="https://bootstrapcreative.com/">
-
-                 <img src="https://dummyimage.com/1000x400/444/" alt="responsive image" class="d-block img-fluid">
+                <a href="#services">
+<!-- A great image dimension to work with is 4032 x 1600. Ideally, the image needs to be taken in landscape from the get go-->
+                 <img src="img/roadconstruction.png" alt="responsive image" class="d-block img-fluid">
 
                     <div class="carousel-caption">
                         <div>
-                            <h2>Digital Craftsmanship</h2>
-                            <p>We meticously build each site to get results</p>
-                            <span class="btn btn-sm btn-outline-secondary">Learn More</span>
+                            <h2 class="topSection">What We Do</h2>
+                            <!-- <p class="we">We meticously build each site to get results</p> -->
+                            <!-- https://www.w3schools.com/howto/howto_css_outline_buttons.asp -->
+                            <span class="btn btn-sm btn-outline-secondary change btnlearnmore" style="color:white">Learn More</span>
                         </div>
                     </div>
                 </a>
@@ -158,31 +167,31 @@
           
             <div class="carousel-item">
                 <a href="https://bootstrapcreative.com/">
-                 <img src="https://dummyimage.com/1000x400/444/" alt="responsive image" class="d-block img-fluid">
+                 <img src="img/office.png" alt="responsive image" class="d-block img-fluid">
 
-                    <div class="carousel-caption justify-content-center align-items-center">
+                    <!-- <div class="carousel-caption justify-content-center align-items-center">
                         <div>
                             <h2>Every project begins with a sketch</h2>
                             <p>We work as an extension of your business to explore solutions</p>
                             <span class="btn btn-sm btn-outline-secondary">Our Process</span>
                         </div>
-                    </div>
+                    </div> -->
                 </a>
             </div>
             <!-- /.carousel-item -->
             <div class="carousel-item">
                 <a href="https://bootstrapcreative.com/">
   
-                 <img src="https://dummyimage.com/1000x400/444/" alt="responsive image" class="d-block img-fluid">
+                 <img src="img/roaddevelopment.png" alt="responsive image" class="d-block img-fluid">
 
 
-                    <div class="carousel-caption justify-content-center align-items-center">
+                    <!-- <div class="carousel-caption justify-content-center align-items-center">
                         <div>
                             <h2>Performance Optimization</h2>
                             <p>We monitor and optimize your site's long-term performance</p>
                             <span class="btn btn-sm btn-secondary">Learn How</span>
                         </div>
-                    </div>
+                    </div> -->
                 </a>
             </div>
             <!-- /.carousel-item -->
@@ -201,9 +210,9 @@
     <!-- /.carousel -->
 
 
-<div class="container-fluid">
+<!-- <div class="container-fluid">
     <p>Full width carousel</p>
-</div>
+</div> -->
 <!-- /.container -->
 
 
@@ -217,7 +226,7 @@
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
-            <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Clientele</button></a>
+            <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg clientele">Clientele</button></a>
         </div>
 
     </div>
@@ -235,7 +244,7 @@
     <div class="row welcome text-center">
 
         <div class="col-12">
-            <h1 class="display-4">
+            <h1 class="display-4" id="about">
                 Built with care.
             </h1>
             <hr>
@@ -292,8 +301,8 @@
 
 <!-- Emoji Section --> 
 
-<button class="fun" data-toggle="collapse" data-target="#emoji">
-    What We DO 
+<button class="fun" data-toggle="collapse" data-target="#emoji" id="services">
+    What We Do 
 </button>
 <div id="emoji" class="collapse">
     <div class="container-fluid padding">
@@ -329,13 +338,87 @@
     </div>
 </div>
 
+<!-- Services -->
+<div class="container-fluid padding">
+        <div class="row welcome text-center">
+
+            <div class="col-12">
+
+                <h1 class="display-4" id="services">Services</h1>
+
+            </div>
+
+            <hr>
+
+        </div>
+    </div>
+
+<!-- Cards -->
+
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="img/road.png" alt="">
+                <div class="card-body align-items-center d-flex justify-content-center">
+                    <h4 class="card-title">Roads</h4>
+                    <!-- <a href="#" class="btn btn-outline-secondary clientele">See Profile</a> -->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="img/painting.jpg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title align-items-center d-flex justify-content-center">Painting</h4>
+                    <!-- <a href="#" class="btn btn-outline-secondary clientele">See Profile</a> -->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card ">
+                <img class="card-img-top" src="img/construction.png" alt="">
+                <div class="card-body">
+                    <h4 class="card-title align-items-center d-flex justify-content-center">Refurbishment</h4>
+                    <!-- <a href="#" class="btn btn-outline-secondary clientele">See Profile</a> -->
+                </div>
+
+            </div>
+        </div>
+
+<!-- https://stackoverflow.com/questions/43461718/bootstrap-4-center-just-two-cards-not-three-just-two -->
+
+        <!-- <div class="col-md-4 " >
+            <div class="card">
+                <img class="card-img-top" src="img/team1.jpeg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title align-items-center d-flex justify-content-center">Landscaping</h4>
+                    <!-- <a href="#" class="btn btn-outline-secondary clientele">See Profile</a> -->
+                </div>
+            </div> 
+
+        <!-- <div class="col-md-4">
+              <div class="card">
+                <img class="card-img-top" src="img/team1.jpeg" alt="">
+                <div class="card-body">
+                    <h4 class="card-title align-items-center d-flex justify-content-center">Painting</h4>
+                    <!-- <a href="#" class="btn btn-outline-secondary clientele">See Profile</a> -->
+                </div>
+
+    </div>
+</div>
+
 <!-- Meet the team -->
     <div class="container-fluid padding">
         <div class="row welcome text-center">
 
             <div class="col-12">
 
-                <h1 class="display-4">Meet the Team</h1>
+                <h1 class="display-4" id="team">Meet the Team</h1>
 
             </div>
 
@@ -354,7 +437,7 @@
                 <div class="card-body">
                     <h4 class="card-title">Javid Wilson</h4>
                     <p class="card-text">Javid Wilson is a junior architect and quantity surveyor. He's the most recent addition ot the team.</p>
-                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    <a href="#" class="btn btn-outline-secondary clientele">See Profile</a>
                 </div>
 
             </div>
@@ -366,7 +449,7 @@
                 <div class="card-body">
                     <h4 class="card-title">Javid Wilson</h4>
                     <p class="card-text">Javid Wilson is a junior architect and quantity surveyor. He's the most recent addition ot the team.</p>
-                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    <a href="#" class="btn btn-outline-secondary clientele">See Profile</a>
                 </div>
 
             </div>
@@ -378,7 +461,7 @@
                 <div class="card-body">
                     <h4 class="card-title">Javid Wilson</h4>
                     <p class="card-text">Javid Wilson is a junior architect and quantity surveyor. He's the most recent addition ot the team.</p>
-                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    <a href="#" class="btn btn-outline-secondary clientele">See Profile</a>
                 </div>
 
             </div>
@@ -404,7 +487,7 @@
                 Reputation is everything. Our past, present and future success is irrelevant if we are not honest and forthright.
             </p>
             <br>
-            <a href="#" class="btn btn-primary">Learn More</a>
+            <a href="#" class="btn clientele">Learn More</a>
         </div>
 
         <div class="col-lg-6">
@@ -423,7 +506,7 @@
 <div class="container-fluid padding">
     <div class="row text-center padding">
         <div class="col-12">
-             <h2>Connect</h2>   
+             <h2 id="connect">Connect</h2>   
         </div>
         <div class="col-12 social padding">
             <a href="#"><i class="fab fa-facebook"></i></a>
